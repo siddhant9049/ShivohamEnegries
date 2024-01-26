@@ -1,0 +1,42 @@
+/* ShivohamWorkflow.css */
+.shivoham-workflow-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .workflow-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .workflow-step {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .workflow-step h3 {
+    color: #4CAF50; /* Green color, you can adjust as needed */
+  }
+  
+  .workflow-step p {
+    line-height: 1.5;
+  }
+  /* ShivohamWorkflow.css */
+/* ... (previous styles) */
+
+.shivoham-logo-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .shivoham-logo-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  .shivoham-workflow-container h2{
+    text-shadow: yellow;
+color: rgb(76, 170, 252);
+    text-align: center;
+  }

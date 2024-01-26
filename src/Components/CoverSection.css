@@ -1,0 +1,70 @@
+/* src/components/CoverSection.css */
+.cover-section {
+    margin-top: 2em;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 300px; /* Adjust the height based on your design */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: brightness(0.8);
+    transition: transform 0.3s ease-in-out; /* Add the transition property */
+    /* filter: brightness(0.8); Adjust the initial brightness (darker) */
+  }
+  
+  .cover-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Adjust the overlay color and opacity */
+  }
+  
+  .cover-content {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: right;
+    color: white;
+    margin-left: 45%;
+  }
+  
+  .cover-content h2 {
+    font-size: x-large;
+    width: 750px; /* Adjust the width based on your design */
+    margin: 10px auto; /* Center the text horizontally */
+  }
+  
+  /* Add a hover effect */
+  .cover-image:hover {
+    transform: scale(1.1); /* Adjust the scale value for zoom effect */
+    filter: brightness(0.8); /* Adjust brightness on hover (normal) */
+  
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .cover-image {
+      height: 200px; /* Adjust the height for smaller screens */
+    }
+  
+    .cover-content h2 {
+      font-size: 2em; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cover-content h2 {
+      font-size: 1.1em;
+    }
+  }
+  

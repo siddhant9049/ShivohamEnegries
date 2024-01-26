@@ -1,0 +1,55 @@
+/* src/components/ShivohamEnergiesInfo.css */
+
+.shivoham-energies-info {
+
+  font-family: "Lato",sans-serif;
+  
+    max-width: 1000px;
+    margin: 50px auto auto  auto;
+    padding: 30px;
+    text-align: left;
+    /* background-color: rgba(124, 204, 253, 0.8); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shivoham-energies-info h2 {
+    color: #333;
+    font-family: "Lato",sans-serif;
+  }
+  
+  .shivoham-energies-info p {
+    font-family: "Lato",sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .shivoham-energies-info ul::before {
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .shivoham-energies-info li {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .shivoham-energies-info li::before {
+  
+      content: '\2713'; ; /* Bullet point */
+    color: #00d2fc;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+.solar-power-info li::before {
+  content: '\2022'; /* Bullet point */
+  color: #6b6022;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

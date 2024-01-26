@@ -1,0 +1,98 @@
+/* SolarSystemPage.css */
+
+body {
+    /* font-family: 'Arial', sans-serif; */
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .step li {
+    
+    
+  }
+  .step h2 {
+    
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+  
+  .step h3{
+    /* font-family: Courier, monospace; */
+    text-align: center;
+  }
+
+ .step p{
+    
+    font-family: Optima, sans-serif; 
+    font-size: 1.2em;
+ }
+
+
+  .step-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .step {
+    border-left:10px solid  #c3e1f6;
+    text-align: center;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5.5px 4px rgba(23, 93, 144, 0.231);
+  }
+  
+  .step-number {
+    background-color: #e5c959;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  /* SolarSystemPage.css */
+
+/* ... (previous styles) ... */
+
+.step-container {
+    position: relative;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px; /* Adjust arrow width */
+    height: 40px; /* Adjust arrow height */
+    background-color: #3498db; /* Arrow color */
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    animation: moveArrow 4s infinite linear; /* Adjust animation duration */
+  }
+  
+  @keyframes moveArrow {
+    0% {
+      left: 10%; /* Adjust starting position */
+      opacity: 0;
+    }
+    20%, 80% {
+      opacity: 1;
+    }
+    100% {
+      left: 90%; /* Adjust ending position */
+      opacity: 0;
+    }
+  }
+  

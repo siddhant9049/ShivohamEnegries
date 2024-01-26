@@ -1,0 +1,87 @@
+/* src/components/Hero.css */
+.hero-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+ 
+  }
+  
+  .solar-image {
+    width: 100%;
+    height: 800px; /* Adjust the height based on your preference */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition: transform 6s, filter 6s; /* Add filter transition */
+    filter: brightness(0.4); /* Set the initial brightness (darker) */
+  }
+  
+  .hero-text {
+font-size: x-large;
+width: 750PX;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 2.2px;
+    transform: translate(-50%, -50%);
+    color: rgb(117, 192, 239); ;
+  }
+  
+  .hero-container:hover .solar-image {
+    transform: scale(1.5);
+    filter: brightness(0.3); /* Adjust brightness on hover (normal) */
+  }
+  #energies{
+    color: rgb(245, 186, 104);
+  }
+  .hero-text p{
+    margin-top: -20px;
+    letter-spacing: 6px;
+    color: rgba(94, 176, 94, 0.912);
+    
+    font-weight: 750 ;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .solar-image {
+      height: 650px; /* Adjust height for smaller screens */
+      transition: transform 1s, filter 1s; /* Adjust transition durations for smaller screens */
+    }
+    .hero-text h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+      }
+    
+      .hero-text p {
+        font-size: 1em; 
+        letter-spacing: 2px;/* Adjust font size for smaller screens */
+      }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hero-text h1 {
+      font-size: 1em;
+    }
+  
+    .hero-text p {
+      margin-top: -10px;
+      font-size: 0.6em;
+      letter-spacing: 2px;
+
+      
+    }
+  }
+.sliding-image-container {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px; /* Adjust the height based on your preference */
+}
+
+.sliding-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Styles for Sliding Image */

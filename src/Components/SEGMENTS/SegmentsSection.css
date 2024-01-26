@@ -1,0 +1,37 @@
+/* src/components/SegmentsSection.css */
+.segments-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Set a light background color */
+  }
+  
+  .segment {
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* Set a white background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .segments-section h2 {
+    font-size: 1.5rem;
+    color: #333; /* Set a dark text color */
+  }
+  
+  .segments-section p {
+    font-size: 1rem;
+    color: #000000; /* Set a medium gray text color */
+  }
+  
+ .segment h3 {
+    font-size: 1.2rem;
+    color: rgba(98, 183, 236, 0.8); ; ; /* Set a yellow text color */
+    margin-top: 20px;
+  }
+  .segment a {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent (h2 color) */
+  }

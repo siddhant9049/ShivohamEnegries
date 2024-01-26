@@ -1,0 +1,266 @@
+/* src/pages/ResidentialPage.css */
+.residential-page {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .content-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .content-container h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .content-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .sub-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .solution-list,
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px; /* Add left margin for the lists */
+  }
+  
+  .solution-list li,
+  .benefits-list li {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .solution-list li::before,
+  .benefits-list li::before {
+    content: '\2713'; /* Unicode character for a checkmark */
+    color: #4CAF50; /* Green color */
+    font-size: 1.2rem;
+    margin-right: 5px;
+    position: absolute;
+    left: -20px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .content-container {
+      padding: 15px;
+    }
+  
+    .content-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .content-container p {
+      font-size: 1rem;
+    }
+  
+    .sub-heading {
+      font-size: 1.2rem;
+    }
+  
+    .solution-list,
+    .benefits-list {
+      margin-left: 15px;
+    }
+  
+    .solution-list li,
+    .benefits-list li {
+      margin-bottom: 8px;
+    }
+  
+    .solution-list li::before,
+    .benefits-list li::before {
+      font-size: 1rem;
+    }
+  }
+/* src/pages/ResidentialPage.css */
+/* ... (existing styles) ... */
+/* 
+.residential-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+} */
+
+.content-container {
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.total-suites-section {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  background-color: #f8f8f8;
+  /* padding: 20px; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-suites-section h3 {
+  padding-top: 20px ;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.completed-suites-list {
+  list-style: none;
+  padding: 0;
+}
+
+.completed-suites-list li {
+  
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Optional: Add a subtle border between sections */
+.content-container > div {
+  margin-bottom: 30px;
+}
+.completed-suites-list li::before {
+  content: '\2713'; /* Unicode character for a checkmark */
+    color: #0f77ff; /* Green color */
+    
+    margin-right: 10px;
+}
+.completed-suites-list li{
+  margin-right: 100px;
+}
+
+
+
+/* src/pages/ResidentialPage.css */
+/* ... (existing styles) ... */
+
+/* .project-photos {
+  margin-top: 20px;
+}
+
+.project-photos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.project-gallery img {
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.project-photos {
+  margin-top: 20px;
+}
+
+.project-photos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+} */
+
+/* Apply styles only for screens wider than 600px */
+/* @media screen and (min-width: 600px) {
+  .project-gallery img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+} */
+/* src/pages/ResidentialPage.css */
+
+/* ... (existing styles) ... */
+
+.project-photos {
+  margin-top: 20px;
+ 
+}
+
+.project-photos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-gallery {
+  display: grid;
+  gap: 5px; /* Adjust the gap between images as needed */
+}
+
+.project-gallery img {
+  width: 80%;
+  margin-left: 10%;
+  height: auto; /* Maintain the aspect ratio */
+  /* border-radius: 8px; */
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 600px) {
+  .project-photos {
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  
+
+  .project-gallery img {
+    width: 100%;
+    
+    height: auto; /* Maintain the aspect ratio */
+    /* border-radius: 8px; */
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .project-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* ... (existing styles) ... */

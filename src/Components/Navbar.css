@@ -1,0 +1,221 @@
+ /* src/components/Navbar.css  */
+.navbar {
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+    background-color: rgba(124, 204, 253, 0.8); 
+
+}
+/* src/components/Navbar.css */
+
+/* Existing styles */
+
+/* src/components/Navbar.css */
+
+/* Existing styles */
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.9s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(124, 204, 253, 0.8);
+}
+
+/* Existing styles */
+
+
+/* Existing styles */
+
+
+
+.logo {
+  float: left;
+  padding: 15px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.logo a {
+  text-decoration: none;
+  color: rgb(255, 253, 253);
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+.nav-links {
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 0;
+  float: right;
+  display: flex;
+  gap: 50px; /* Adjust the gap value as needed */
+}
+
+.nav-links li {
+ 
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(59, 2, 2);
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6b6022;
+}
+.active {
+  
+  /* border-bottom: 2px solid #1f1e18; */
+  
+}
+
+.menu-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  /* border-radius: 10px; */
+  justify-content: center;
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s;
+  z-index: 999;
+}
+
+.menu-background.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-links {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-links li {
+  margin: 20px 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: rgb(59, 2, 2);
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.menu-links  {
+  color: #6b6022;
+}
+@media screen and (min-width: 601px) {
+  .navbar {
+   
+    width: 100%;
+   
+  
+  }
+  
+  .na
+  .menu-background.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menu-icon {
+    /* display: none; */
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    float: right;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .menu-background.active {
+    display: block;
+    width: 100%;
+    height: 30%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .logo {
+    float: left;
+   
+font-size: 13px;  
+    /* margin-bottom: 10px; */
+  }
+
+  /* Updated styles to make the logo visible on mobile screens */
+  .logo a {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    color: #ffffff;
+    display: block;
+    float: right;
+    cursor: pointer;
+    padding: 15px;
+  }
+
+  .menu-icon {
+    margin-top: -5px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .menu-background.active {
+    display: block;
+  }
+}

@@ -1,0 +1,54 @@
+.services-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Adjust the font size based on your design */
+}
+
+.work-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.work-card {
+  font-family:   "Lato",sans-serif;
+  
+  border-left: 10px solid rgba(131, 201, 245, 0.8); ; 
+  
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(230deg, rgba(192,210,246,0.2993039443155452) 14%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+.work-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+.work-card {
+  /* Other styles for work-card */
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .work-card {
+    width: calc(80% - 60px); /* Display two cards per row in mobile view */
+  }
+
+  .services-heading {
+    font-size: 1.5em; /* Adjust the font size based on your design */
+  }
+}

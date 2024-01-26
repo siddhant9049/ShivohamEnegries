@@ -1,0 +1,65 @@
+/* src/components/ProjectSection.css */
+#project-section {
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .project-card {
+    display: inline-block;
+    width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+    /* margin: 10px; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-content {
+    padding: 15px;
+   
+  }
+  
+  .project-content img {
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .project-content h3 {
+    margin-top: 10px;
+  }
+  
+  .project-content h2 {
+    color: rgb(34, 161, 230);
+  }
+  
+  .project-content p {
+    color: #555;
+  }
+  
+  /* Add responsive styles as needed */
+  @media screen and (max-width: 768px) {
+    .project-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .project-card {
+      width: 100%;
+    }
+    .project-content img {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+    
+  }
+  
